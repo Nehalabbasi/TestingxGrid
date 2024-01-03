@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    align-items: center;
+}
+.main {
+    width: 440px;
+    height: 440px;
+    border-radius: 100%;
+    opacity: inherit;
+    background: #f3f3f34f;
+    box-shadow: 13.793px 13.793px 34.483px 0px rgb(0 0 0 / 18%), -13.793px -13.793px 17.241px 3.448px #FFF, 13.793px 13.793px 34.483px 0px #c7c7c736 inset, -13.793px -13.793px 34.483px 0px #ffffff4a inset;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.minutes_point {
+    position: relative;
+    z-index: 99;
+    width: 380px;
+    height: 380px;
+}
+
+
+.minutes_point img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hours_points {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 380px;
+    height: 380px;
+}
+
+.main_clockBox {
+    position: relative;
+}
+
+.hours_points img {
+    width: 100%;
+    height: 100%;
+}
+.needles_box {
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 380px;
+}
+
+.hours_needle {
+    margin-right: -40px;
+    margin-bottom: -32px;
+}
+.needles_box::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 100%;
+    top: 62%;
+    left: 36%;
+    transform: translate(20px, -50%);
+}s
